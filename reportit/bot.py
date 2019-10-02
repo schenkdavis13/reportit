@@ -5,6 +5,7 @@ from discord.ext import commands
 import discord
 import config
 
+
 class Bot(commands.Bot):
     def __init__(self, **kwargs):
         super().__init__(command_prefix=commands.when_mentioned_or('$'), **kwargs)
